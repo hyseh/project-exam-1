@@ -1,0 +1,49 @@
+.dragging {
+  cursor: grab;
+  scroll-behavior: auto !important;
+}
+
+.disabled {
+  pointer-events: none !important;
+}
+
+.slide-button__prev,
+.slide-button__next {
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 48px;
+  width: 48px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.slide-button__prev i,
+.slide-button__next i {
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.slide-button__prev {
+  display: none;
+  left: 0;
+}
+
+.slide-button__next {
+  right: 0;
+}
+
+.slide-button__prev:hover,
+.slide-button__next:hover {
+  opacity: 1;
+}

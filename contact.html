@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viking Spiller Spill - Kontakt</title>
+    <meta
+      name="description"
+      content="Viking Spiller Spill - Her finner du informasjon om hvordan du kan kontakte meg."
+    />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/contact.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/764506b1d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/contact.js" type="module" defer></script>
+    <script src="./js/components/nav.js" type="module" defer></script>
+    <script src="./js/utilities/scroll-top.js" defer></script>
+    <script src="./js/utilities/validation.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-logo-desktop">
+        <a
+          href="./index.html"
+          title="Hjemmesiden for Viking Spiller Spill"
+          aria-label="Hjem"
+        >
+          <div class="nav-logo-desktop__image">
+            <img
+              src="./images/viking-spiller-spill-logo-black.webp"
+              alt="Viking Spiller Spill logo"
+              height="320px"
+              width="772px"
+            />
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav-logo-mobile">
+          <a
+            href="./index.html"
+            title="Hjemmesiden for Viking Spiller Spill"
+            aria-label="Hjem"
+          >
+            <div class="nav-logo-mobile__image">
+              <img
+                src="./images/viking-spiller-spill-logo-white.webp"
+                alt="Viking Spiller Spill logo"
+                height="320px"
+                width="772px"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="nav-container">
+          <div class="nav-menu__upper">
+            <p class="nav-menu__title">Navigasjon</p>
+            <button class="nav-menu-button nav-menu-close" aria-label="Meny">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html" title="Hjem"
+                >Hjem<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./blog-list.html" title="Poster"
+                >Poster<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./about.html" title="Om"
+                >Om<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./contact.html" title="Kontakt"
+                >Kontakt<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="nav-icons">
+            <li>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                title="Abonner på YouTube kanalen min"
+                aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                title="Følg meg på Twitter"
+                aria-label="Twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://discord.com"
+                target="_blank"
+                title="Bli med i Discord serveren min"
+                aria-label="Discord"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <button class="nav-menu-button nav-menu-open" aria-label="Meny">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="loader"></div>
+
+      <section class="contact">
+        <div class="contact-container">
+          <div class="contact-container__main">
+            <div class="contact-container__titles">
+              <p class="section-title">Kontakt meg</p>
+            </div>
+            <div class="flex-wrapper__contact">
+              <div class="contact-info__container">
+                <p class="contact-info__untertitle">
+                  Hvordan du kan kontakte meg
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris ac nulla id libero vestibulum imperdiet vel quis eros.
+                  Suspendisse euismod et nulla sed auctor. Curabitur quis dui
+                  tempor, egestas lorem at, pulvinar nibh. Aliquam commodo quis
+                  dolor in mattis. Cras bibendum euismod libero, tempus semper
+                  turpis euismod eu. Etiam sodales tellus neque, sed interdum
+                  magna rutrum sed. Etiam sed dictum leo. Nulla facilisi.
+                  Integer dignissim sapien eu diam bibendum suscipit. Nam
+                  accumsan cursus leo vel auctor.
+                </p>
+                <p>
+                  Aliquam euismod nulla id nisl scelerisque, ac tincidunt orci
+                  tincidunt. Donec vulputate eros at viverra pulvinar. Nulla
+                  malesuada nunc in tellus elementum tempus. Nulla suscipit
+                  tincidunt elit, at placerat velit rhoncus sit amet. Fusce id
+                  enim lectus. Donec auctor odio nec ultricies pellentesque.
+                  Pellentesque eget ligula commodo, cursus sem sit amet, egestas
+                  est.
+                </p>
+                <p>
+                  Du kan kontakte meg direkte via e-post
+                  <b>kontakt@example.com</b>
+                </p>
+              </div>
+              <form id="contact-form">
+                <p class="contact-info__untertitle">Kontaktskjema</p>
+                <p>*Feltet er påkrevd</p>
+                <div class="form-container">
+                  <label>
+                    Fullt navn*
+                    <input
+                      name="name"
+                      id="full-name"
+                      autocomplete="name"
+                      placeholder="Navn"
+                    />
+                    <div class="form-error" id="name-error">
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                      Du må oppgi ditt fulle navn.
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-container">
+                  <label>
+                    Oppgi din e-postadresse*
+                    <input
+                      name="email"
+                      id="email"
+                      autocomplete="email"
+                      placeholder="E-post"
+                    />
+                    <div class="form-error" id="email-error">
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                      Du må oppgi din e-postadresse.
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-container">
+                  <label>
+                    Emne*
+                    <input
+                      name="subject"
+                      id="subject"
+                      autocomplete="off"
+                      placeholder="Emne"
+                    />
+                    <div class="form-error" id="subject-error">
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                      Du må oppgi emne.
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-container">
+                  <label>
+                    Din melding*
+                    <textarea
+                      name="message"
+                      id="message"
+                      autocomplete="off"
+                      placeholder="Melding"
+                    ></textarea>
+                    <div class="form-error" id="message-error">
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                      Du må oppgi din melding.
+                    </div>
+                  </label>
+                </div>
+
+                <div class="from-container">
+                  <label>
+                    <button type="submit" class="form-button__submit">
+                      Send melding
+                    </button>
+                    <div class="form-success">
+                      <i class="fa-solid fa-circle-check"></i>
+                      Suksess! Meldingen ble sendt.
+                    </div>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-group__container">
+          <div class="footer-group__shortcuts">
+            <ul>
+              <li>
+                <a href="./index.html" title="Hjem">Hjem</a>
+              </li>
+              <li>
+                <a href="./blog-list.html" title="Poster">Poster</a>
+              </li>
+              <li>
+                <a href="./about.html" title="Om">Om</a>
+              </li>
+              <li>
+                <a href="./contact.html" title="Kontakt">Kontakt</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#" title="Brukervilkår" onclick="return false;"
+                  >Brukervilkår</a
+                >
+              </li>
+              <li>
+                <a href="#" title="Personvernerklæring" onclick="return false;"
+                  >Personvernerklæring</a
+                >
+              </li>
+              <li>
+                <a href="#" title="Informasjonskapsler" onclick="return false;"
+                  >Informasjonskapsler</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-group__socials">
+            <ul>
+              <li>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  title="Abonner på YouTube kanalen min"
+                  aria-label="YouTube"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  title="Følg meg på Twitter"
+                  aria-label="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.com"
+                  target="_blank"
+                  title="Bli med i Discord serveren min"
+                  aria-label="Discord"
+                  ><i class="fa-brands fa-discord"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-group__container">
+          <div class="footer__copyright">
+            <p>Copyright &copy; Viking Spiller Spill</p>
+          </div>
+          <div class="footer__back-to-top">
+            <button class="button__back-to-top">
+              <p>Til toppen</p>
+              <i class="fa-solid fa-angle-up"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

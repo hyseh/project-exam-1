@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viking Spiller Spill - Post</title>
+    <meta
+      name="description"
+      content="Viking Spiller Spill - Her kan du lese om en spesifikk post."
+    />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/blog-specific.css" rel="stylesheet" />
+    <link href="./css/components/modal.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/764506b1d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/blog-specific.js" type="module" defer></script>
+    <script src="./js/components/nav.js" type="module" defer></script>
+    <script src="./js/components/modal.js" type="module" defer></script>
+    <script src="./js/utilities/scroll-top.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-logo-desktop">
+        <a
+          href="./index.html"
+          title="Hjemmesiden for Viking Spiller Spill"
+          aria-label="Hjem"
+        >
+          <div class="nav-logo-desktop__image">
+            <img
+              src="./images/viking-spiller-spill-logo-black.webp"
+              alt="Viking Spiller Spill logo"
+              height="320px"
+              width="772px"
+            />
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav-logo-mobile">
+          <a
+            href="./index.html"
+            title="Hjemmesiden for Viking Spiller Spill"
+            aria-label="Hjem"
+          >
+            <div class="nav-logo-mobile__image">
+              <img
+                src="./images/viking-spiller-spill-logo-white.webp"
+                alt="Viking Spiller Spill logo"
+                height="320px"
+                width="772px"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="nav-container">
+          <div class="nav-menu__upper">
+            <p class="nav-menu__title">Navigasjon</p>
+            <button class="nav-menu-button nav-menu-close" aria-label="Meny">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html" title="Hjem"
+                >Hjem<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./blog-list.html" title="Poster"
+                >Poster<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./about.html" title="Om"
+                >Om<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./contact.html" title="Kontakt"
+                >Kontakt<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="nav-icons">
+            <li>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                title="Abonner på YouTube kanalen min"
+                aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                title="Følg meg på Twitter"
+                aria-label="Twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://discord.com"
+                target="_blank"
+                title="Bli med i Discord serveren min"
+                aria-label="Discord"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <button class="nav-menu-button nav-menu-open" aria-label="Meny">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="loader"></div>
+
+      <section class="blog-post">
+        <div class="blog-post-container">
+          <div class="blog-post-container__main"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-group__container">
+          <div class="footer-group__shortcuts">
+            <ul>
+              <li>
+                <a href="./index.html" title="Hjem">Hjem</a>
+              </li>
+              <li>
+                <a href="./blog-list.html" title="Poster">Poster</a>
+              </li>
+              <li>
+                <a href="./about.html" title="Om">Om</a>
+              </li>
+              <li>
+                <a href="./contact.html" title="Kontakt">Kontakt</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#" title="Brukervilkår" onclick="return false;"
+                  >Brukervilkår</a
+                >
+              </li>
+              <li>
+                <a href="#" title="Personvernerklæring" onclick="return false;"
+                  >Personvernerklæring</a
+                >
+              </li>
+              <li>
+                <a href="#" title="Informasjonskapsler" onclick="return false;"
+                  >Informasjonskapsler</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-group__socials">
+            <ul>
+              <li>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  title="Abonner på YouTube kanalen min"
+                  aria-label="YouTube"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  title="Følg meg på Twitter"
+                  aria-label="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.com"
+                  target="_blank"
+                  title="Bli med i Discord serveren min"
+                  aria-label="Discord"
+                  ><i class="fa-brands fa-discord"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-group__container">
+          <div class="footer__copyright">
+            <p>Copyright &copy; Viking Spiller Spill</p>
+          </div>
+          <div class="footer__back-to-top">
+            <button class="button__back-to-top">
+              <p>Til toppen</p>
+              <i class="fa-solid fa-angle-up"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

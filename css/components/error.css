@@ -1,0 +1,20 @@
+.error-container {
+  width: 100%;
+}
+
+.error-container__main {
+  background-color: rgba(250, 0, 0, 0.3);
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.error-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: normal;
+}

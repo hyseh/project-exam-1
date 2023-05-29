@@ -1,5 +1,3 @@
-import { debounce } from '../utilities/debounce.js';
-
 const carousel = document.querySelector('.slider-container');
 const carouselButtons = document.querySelectorAll('.slide-button');
 
@@ -22,7 +20,8 @@ const dragging = (e) => {
   carousel.scrollLeft = e.pageX;
   posistionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
   carousel.scrollLeft = prevScrollLeft - posistionDiff;
-  showHideIcons(carousel.scrollLeft);
+  scrollPos = carousel.scrollLeft = prevScrollLeft - posistionDiff;
+  scrollPosChecker();
   draggingLink();
 };
 
@@ -31,6 +30,7 @@ const dragStop = () => {
   carousel.classList.remove('dragging');
   if (!isDragging) return;
   isDragging = false;
+  scrollPosChecker();
   draggingLink();
 };
 
@@ -60,25 +60,27 @@ const draggingLink = () => {
   }
 };
 
-const showHideIcons = (pos = 0) => {
-  let carouselButtonLeft = carouselButtons[0];
-  let carouselButtonRight = carouselButtons[1];
-  let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+let scrollPos = 0;
 
-  if (pos <= 0) {
-    carouselButtonLeft.style.display = 'none';
+let scrollWidth = () => {
+  return carousel.scrollWidth - carousel.clientWidth;
+};
+
+const scrollPosChecker = () => {
+  if (scrollPos < 0) {
+    scrollPos = 0;
   } else {
-    carouselButtonLeft.style.display = 'block';
+    return scrollPos;
   }
 
-  if (pos >= scrollWidth) {
-    carouselButtonRight.style.display = 'none';
+  if (scrollPos > scrollWidth()) {
+    scrollPos = scrollWidth();
   } else {
-    carouselButtonRight.style.display = 'block';
+    return scrollPos;
   }
 };
 
-const getBoxWidth = () => {
+let getBoxWidth = () => {
   let carouselFirstBox = document.querySelectorAll('.blog-container')[0];
   return carouselFirstBox.clientWidth + 20;
 };
@@ -86,20 +88,13 @@ const getBoxWidth = () => {
 carouselButtons.forEach((button) => {
   button.addEventListener('click', () => {
     if (button.id == 'slide-button__left') {
-      let scrollPos = (carousel.scrollLeft -= getBoxWidth());
       carousel.scrollLeft -= getBoxWidth();
-      showHideIcons(scrollPos);
+      scrollPos -= getBoxWidth();
+      scrollPosChecker();
     } else {
-      let scrollPos = (carousel.scrollLeft += getBoxWidth());
       carousel.scrollLeft += getBoxWidth();
-      showHideIcons(scrollPos);
+      scrollPos += getBoxWidth();
+      scrollPosChecker();
     }
   });
 });
-
-const showHideIconsResize = () => {
-  let scrollPos = (carousel.scrollLeft -= getBoxWidth());
-  showHideIcons(scrollPos);
-};
-
-window.addEventListener('resize', debounce(showHideIconsResize, 300));

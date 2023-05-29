@@ -69,10 +69,8 @@ form.addEventListener('submit', (e) => {
     subjectCheck === true &&
     messageCheck === true
   ) {
-    console.log('yes');
     successMessage.style.display = 'block';
   } else {
-    console.log('no');
     successMessage.style.display = 'none';
   }
 });

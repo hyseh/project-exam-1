@@ -156,10 +156,8 @@ newsletterForm.addEventListener('submit', (e) => {
   validateNewsletter();
 
   if (emailCheck === true && nameCheck === true) {
-    console.log('yes');
     successMessage.style.display = 'block';
   } else {
-    console.log('no');
     successMessage.style.display = 'none';
   }
 });

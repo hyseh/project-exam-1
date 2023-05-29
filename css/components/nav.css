@@ -70,6 +70,7 @@ nav {
 
 .nav-menu-button {
   background-color: var(--white);
+  color: var(--black);
   display: grid;
   place-items: center;
   cursor: pointer;
